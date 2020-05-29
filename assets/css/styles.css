@@ -1,157 +1,74 @@
-h1 {
-  text-align: center;
-}
-.container {
-  width: 75%;
-  margin: auto;
+body {
+  margin: 0;
+  padding: 0;
 }
 
 .row {
   display: flex;
 }
 
+.col-1 {
+  width: 8.33333333333%;
+}
+
+.col-2 {
+  width: 16.6666666667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.3333333333%;
+}
+
+.col-5 {
+  width: 41.6666666667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.3333333333%;
+}
+
+.col-8 {
+  width: 66.6666666667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-sm-9 {
+  width: 100%;
+}
+
+.col-10 {
+  width: 83.3333333333%;
+}
+
+.col-11 {
+  width: 91.6666666667%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
 .d-none {
   display: none;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .text-justify {
   text-align: justify;
-}
-
-.img-logo-round {
-  border-radius: 50%;
-  width: 100%;
-  height: 100%;
-}
-
-.box-whats {
-  position: fixed;
-  right: -300px;
-  bottom: 75px;
-  margin-right: 30px !important;
-  z-index: 9999;
-}
-
-.box-whats:after {
-  content: "";
-  width: 0;
-  height: 0;
-  position: absolute;
-  border-left: 25px solid transparent;
-  border-right: 1px solid transparent;
-  border-top: 24px solid #f0f0f1;
-  bottom: -24px;
-  left: 80%;
-  z-index: 9999;
-}
-
-.box-whats-header {
-  background-color: #4caf50;
-  padding: 10px;
-  border-radius: 15px 15px 0 0;
-}
-
-.box-whats-header-logo {
-  height: 50px;
-  width: 50px;
-}
-
-.box-whats-header-title {
-  margin-top: 5px;
-  color: #edf5f4;
-  font-weight: bold;
-}
-
-.box-whats-header-small {
-  margin-top: 1px;
-  color: #d6f0ee;
-  font-weight: bolder;
-}
-
-.box-whats-header-close {
-  color: #d6f0ee;
-  margin-left: 50px;
-  cursor: pointer;
-}
-
-.box-whats-body {
-  margin-top: 0;
-  padding: 20px;
-  background-image: url("../images/fundo_whats.jpg");
-  background-repeat: no-repeat;
-  min-height: 80px;
-}
-
-.box-whats-body-message {
-  background-color: #fff;
-  width: 170px;
-  padding: 3px;
-  border-radius: 0 5px 5px;
-  margin-top: -17px;
-  margin-left: -3px;
-}
-
-.box-whats-body-message-info {
-  margin-top: 5px;
-  margin-left: 5px;
-  color: #555;
-}
-
-.box-whats-body-message-time {
-  margin-top: 10px;
-  text-align: right;
-  color: #666;
-}
-
-.box-whats-footer {
-  padding: 10px;
-  background-color: #f0f0f1;
-  display: flex;
-  border-radius: 0 0 15px 15px;
-}
-
-.box-whats-footer-emoj {
-  margin-right: 5px;
-  cursor: pointer;
-}
-
-.box-whats-footer-input {
-  height: 25px;
-  width: 80%;
-  background-color: #fff;
-  border-radius: 15px;
-  cursor: text;
-}
-
-.box-whats-footer-mic {
-  margin-left: 5px;
-  cursor: pointer;
-}
-
-.whats-fixed-icon {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-}
-
-.embed-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-  max-width: 100%;
-  height: auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-.embed-container iframe,
-.embed-container object,
-.embed-container embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 }
 
 @media (prefers-color-scheme: dark) {
