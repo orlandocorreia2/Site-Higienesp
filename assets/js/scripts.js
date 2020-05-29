@@ -1,8 +1,9 @@
 const date = new Date();
 const hour = date.getHours();
 const minutes = date.getMinutes();
-let boxWhatShow = false;
+let boxWhatsShow = false;
 let changeStatusText = false;
+let boxWhatsShowFirst = false;
 
 document.getElementById(
   "box-whats-body-message-time-now"
@@ -14,9 +15,18 @@ document
     document.getElementById("whats-link-redirect").click();
   });
 
-setTimeout(() => {
-  slideLeftBoxWhats();
-}, 10000);
+window.onscroll = function () {
+  showBoxWhatsAuto();
+};
+
+function showBoxWhatsAuto() {
+  if (!boxWhatsShowFirst) {
+    setTimeout(() => {
+      slideLeftBoxWhats();
+      boxWhatsShowFirst = true;
+    }, 10000);
+  }
+}
 
 document
   .querySelector(".whats-fixed-icon")
@@ -31,7 +41,7 @@ document
   });
 
 function slideLeftBoxWhats() {
-  if (!boxWhatShow) {
+  if (!boxWhatsShow) {
     if (!changeStatusText) {
       setTimeout(() => {
         document.getElementById("status-text").innerHTML = "online";
@@ -39,7 +49,7 @@ function slideLeftBoxWhats() {
       }, 3000);
     }
     changeStatusText = true;
-    boxWhatShow = true;
+    boxWhatsShow = true;
     const boxWhats = document.querySelector(".box-whats");
     let initialRightPosition = -300;
 
@@ -63,8 +73,8 @@ function slideLeftBoxWhats() {
 }
 
 function slideRightBoxWhats() {
-  if (boxWhatShow) {
-    boxWhatShow = false;
+  if (boxWhatsShow) {
+    boxWhatsShow = false;
     const boxWhats = document.querySelector(".box-whats");
     let initialRightPosition = -10;
 
