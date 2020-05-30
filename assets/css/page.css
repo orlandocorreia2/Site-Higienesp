@@ -57,12 +57,29 @@
   color: #444;
 }
 
+.portifolio .item {
+  float: left;
+  width: 33.3333333333%;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
 .portifolio h3 {
   text-align: center;
 }
 
 .portifolio .info {
   text-align: justify;
+}
+
+.sustainable .item {
+  width: 50%;
+  float: left;
+  font-size: 35px;
+  color: #5cb85c;
+  text-align: center;
+  padding: 30px;
+  box-sizing: border-box;
 }
 
 .sustainable h2 {
@@ -99,12 +116,32 @@
   text-align: justify;
 }
 
+.form {
+  color: #444;
+}
+
+.form-inputs {
+  width: 50%;
+  margin: auto;
+}
+
+.form label {
+  margin-bottom: 20px;
+}
+
 .footer {
   background-color: #337cbb;
   color: #fff;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-bottom: 50px;
+  padding: 50px 150px 100px 150px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 250px;
+}
+
+.footer .item {
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
 }
 
 .footer h2 {
@@ -154,6 +191,12 @@
     color: #444;
   }
 
+  .portifolio .item {
+    float: none;
+    width: 100%;
+    padding: 0;
+  }
+
   .portifolio h3 {
     text-align: center;
   }
@@ -162,8 +205,18 @@
     text-align: justify;
   }
 
+  .sustainable .item {
+    width: 100%;
+    float: none;
+    font-size: 30px;
+    color: #5cb85c;
+    text-align: center;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
   .sustainable h2 {
-    font-size: 20px;
+    font-size: 22px;
     color: #5cb85c;
     text-align: center;
   }
@@ -174,9 +227,13 @@
   }
 
   .sustainable .info {
-    color: #444;
-    font-size: 18px;
-    text-align: justify;
+    padding: 20px;
+    font-size: 16px;
+  }
+
+  .form-inputs {
+    width: 80%;
+    margin: auto;
   }
 
   .contact {
@@ -192,21 +249,26 @@
   }
 
   .contact .info {
-    font-size: 18px;
+    font-size: 16px;
     text-align: justify;
   }
 
   .footer {
     background-color: #337cbb;
     color: #fff;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 50px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 30px;
     width: 100%;
+    height: 200px;
+  }
+
+  .footer .info {
+    font-size: 12px;
   }
 
   .footer h2 {
-    font-size: 10px;
+    font-size: 15px;
   }
 
   .footer .social {
