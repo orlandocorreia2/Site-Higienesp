@@ -132,7 +132,84 @@
     margin: auto;
   }
 
-  .col-4 {
+  .services {
+    margin-top: 0;
+    background-color: #337cbb;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .services h2 {
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .services .info {
+    font-size: 18px;
+    text-align: justify;
+  }
+
+  .portifolio {
+    color: #444;
+  }
+
+  .portifolio h3 {
+    text-align: center;
+  }
+
+  .portifolio .info {
+    text-align: justify;
+  }
+
+  .sustainable h2 {
+    font-size: 20px;
+    color: #5cb85c;
+    text-align: center;
+  }
+
+  .sustainable h3 {
+    color: #5bc0de;
+    font-size: 20px;
+  }
+
+  .sustainable .info {
+    color: #444;
+    font-size: 18px;
+    text-align: justify;
+  }
+
+  .contact {
+    margin-top: 30px;
+    background-color: #337cbb;
+    color: #fff;
+    padding: 10px;
+  }
+
+  .contact h2 {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .contact .info {
+    font-size: 18px;
+    text-align: justify;
+  }
+
+  .footer {
+    background-color: #337cbb;
+    color: #fff;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 50px;
     width: 100%;
+  }
+
+  .footer h2 {
+    font-size: 10px;
+  }
+
+  .footer .social {
+    text-align: right;
   }
 }
