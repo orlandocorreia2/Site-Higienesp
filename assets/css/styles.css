@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: Lato;
 }
 
 .container {
@@ -72,8 +73,27 @@ body {
   text-align: center;
 }
 
+.text-right {
+  text-align: right;
+}
 .text-justify {
   text-align: justify;
+}
+
+.mt-3 {
+  margin-top: 30px;
+}
+
+.mr-1 {
+  margin-right: 10px;
+}
+
+.mt-5 {
+  margin-top: 1000px;
+}
+
+.pa-3 {
+  padding: 30px;
 }
 
 @media (prefers-color-scheme: dark) {
