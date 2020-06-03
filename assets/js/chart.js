@@ -3,7 +3,7 @@ function initChart() {
   var myChart = new Chart(ctx, {
     type: "bar",
     data: {
-      labels: ["Alergia", "Renite", "Asma"],
+      labels: ["Alergia (30%)", "Renite (25%)", "Asma (20%)"],
       datasets: [
         {
           label: "Gráfico em (%), fonte (OMS)",

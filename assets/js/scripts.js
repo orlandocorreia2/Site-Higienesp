@@ -42,6 +42,44 @@ function showBoxWhatsAuto() {
   }
 }
 
+document.getElementById("files").addEventListener("change", function () {
+  console.log(this.files);
+
+  if (this.files) {
+    for (file of this.files) {
+      var reader = new FileReader();
+
+      reader.onload = function (e) {
+        const divImagePreview = document.createElement("div");
+        divImagePreview.classList.add("mr-4");
+
+        const imagePreview = document.createElement("img");
+        imagePreview.setAttribute("src", e.target.result);
+        imagePreview.classList.add("image-preview");
+
+        const spanClose = document.createElement("span");
+        spanClose.classList.add("remove-image");
+        spanClose.addEventListener("click", function () {
+          this.closest("div").remove();
+        });
+
+        spanClose.setAttribute("title", "Remover");
+
+        spanClose.innerHTML = "&times;";
+
+        divImagePreview.appendChild(imagePreview);
+        divImagePreview.appendChild(spanClose);
+
+        document
+          .getElementById("list-files-preview")
+          .appendChild(divImagePreview);
+      };
+
+      reader.readAsDataURL(file);
+    }
+  }
+});
+
 document
   .querySelector(".whats-fixed-icon")
   .addEventListener("mouseover", function () {
@@ -146,7 +184,9 @@ function initInfoInteraction() {
       document
         .getElementById("info-interaction-content-logo")
         .classList.add("d-none");
-      document.getElementById("myChart").classList.remove("d-none");
+      const chartElement = document.getElementById("myChart");
+      chartElement.classList.remove("d-none");
+      chartElement.classList.add("chart");
 
       initChart();
       infoInteraction.innerHTML = "";

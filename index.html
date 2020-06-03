@@ -4,28 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Higienesp</title>
-    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/page.css" />
     <link rel="stylesheet" href="./assets/css/embed.css" />
     <link rel="stylesheet" href="./assets/css/whats.css" />
   </head>
   <body >
     <header class="header">
-      <div class="row">
-        <div class="col-9 col-sm-9">
-          <span class="header-title">Higienesp - Higienizando SP</span>
+      <div class="header-inline">
+        <div class="header-title">
+          <span class="header-title">
+            <img src="./assets/images/logo2-higienesp.png" width="50">
+            Higienesp - Higienizando SP
+          </span>
         </div>
-        <div class="col-3 header-links">
+        <div class="header-links">
           <span id="link-home">Home</span>
           <span id="link-services">Serviços</span>
         </div>
       </div>
     </header>
 
-    <div class="row mt-100">
-      <div class="col-6">
-        <div class="col12 text-center">
-          <span id="video-title" ></span>
+    <div class="video-chart">
+      <div class="video">
+        <div class="video-top-title">
+          <span id="video-title"></span>
         </div>
         
         <div class="embed-container">
@@ -41,244 +44,84 @@
         </div>
       </div>
 
-      <div class="col-6">
-        <div class="col-12 text-center" style="height: 100px;">
+      <div class="chart">
+        <div class="chart-top">
           <span id="info-interaction-title">Bem vindo a Higiensp</span>
         </div>
-        <div class="col-12 text-center pt-3 info-interaction-content">
-          <img id="info-interaction-content-logo"  src="./assets/images/logo-higienesp.png" width="500" alt="">
-          <canvas class="d-none" id="myChart"></canvas>
+        <div class="info-interaction-content">
+          <div class="image-logo">
+            <img id="info-interaction-content-logo" width="90%"  src="./assets/images/logo-higienesp.png">
+          </div>
+          <canvas id="myChart"></canvas>
         </div>
       </div>
     </div>
 
-
-
-    
-    
-    <div class="image1">
-      <img src="./assets/images/slide_sofa_01.jpg" width="100%" />
-    </div>
-
-    <div class="services" id="services">
-      <h2>Conheça nossos Serviços</h2>
-
-      <div class="info">
-        A Higienesp presta serviços de higienização em toda grande São Paulo,
-        para pessoas físicas e empresas, atuando com produtos de tecnologia de
-        ponta e ecologicamente aprovados, com equipes treinadas para oferecer
-        qualidade e garantias de segurança para sua família, clientes e seus
-        colaboradores. Confira nossos serviços e entre em contato para tirar
-        dúvidas, orçamentos e fazer seu agendamento. Atenção: Todos os produtos
-        aplicados possuem certificação e ação de sanitização contra vírus e
-        bactérias.
-      </div>
-    </div>
-
-    <div class="mt-3 portifolio">
-      <div class="item">
-        <img src="./assets/images/hig_estofados_3.jpg" width="100%" />
-        <h3>Higienização de Estofados</h3>
-        <div class="info">
-          Nossa especialidade é higienização de estofados, que incluem sofás de
-          tecido, couro e outros materiais, além de poltronas, puffs, cadeiras e
-          outros móveis.
-        </div>
-      </div>
-      <div class="item">
-        <img src="./assets/images/impermeabilizacao.jpg" width="100%" />
-        <h3>Impermeabilização de Estofados</h3>
-        <div>
-          Atuamos com Impermeabilização de estofados, capaz de prolongar a vida
-          do estofamento, garantindo que não sofra com umidade e facilita a
-          limpeza, sem danificar a qualidade do material.
-        </div>
-      </div>
-      <div class="item">
-        <img src="./assets/images/higi_veiculos.jpg" width="100%" />
-        <h3>Higienização de Veículos</h3>
-        <div>
-          A Higienização de veículos é um serviço importantissímo para a sua
-          saúde e de sua família. Realizamos o processo higienizador em
-          estofamentos de tecido, couro natural e sintético.
-        </div>
-      </div>
-    </div>
-
-    <div class="clearfix"></div>
-
-    <div class="mt-3 portifolio">
-      <div class="item">
-        <img src="./assets/images/colchoes.jpg" width="100%" />
-        <h3>Higienização de Colchões</h3>
-        <div class="info">
-          Colchões precisam de todo cuidado, pois podem carregar micro
-          organismos que são verdadeiras ameaças a sua saúde. Realizamos
-          higienização de colchões de todos os tipos.
-        </div>
-      </div>
-      <div class="item">
-        <img src="./assets/images/higiene_carpetes.jpg" width="100%" />
-        <h3>Higienização em Carpetes</h3>
-        <div>
-          Devido o número elevado de ambientes que ainda possuem carpetes e
-          tapetes , estamos atuando com foco nesse tipo de material, oferecendo
-          higienização de alta qualidade.
-        </div>
-      </div>
-      <div class="item">
-        <img src="./assets/images/poltrona.jpg" width="100%" />
-        <h3>Higienização de Poltronas</h3>
-        <div>
-          Criamos uma equipe especializada para higienização de poltronas,
-          cadeiras de escritórios, cadeiras de barbeiros e bancos de salas de
-          espera.
-        </div>
-      </div>
-    </div>
-
-    <div class="clearfix"></div>
-
-    <div class="sustainable">
-      <div class="item">
-        <img src="./assets/images/eco_praticas.jpg" width="100%" />
-      </div>
-      <div class="item">
-        <h2>Sustentável e Seguro</h2>
-        <h3>
-          Nossa missão é prestar um serviço de qualidade, sem esquecer o
-          planeta!
-        </h3>
-        <div class="info">
-          A Higienesp surgiu com a ideia de executar serviços de higienização
-          com qualidade e sustentabilidade, por isso nosso maior compromisso com
-          nossos clientes e com o planeta é exigir que os produtos utilizados
-          atendam todos os requisitos de biossegurança, para utilização por
-          parte de nossa equipe e também na aplicação em diversos ambientes e
-          formatos. Dessa forma, garantimos que todos envolvidos nesse processo
-          terão segurança conforme regulamentação da 
-          <a href="http://portal.anvisa.gov.br/" target="_blank">ANVISA.</a> 
-        </div>
-      </div>
-    </div>
-
-    <div class="clearfix"></div>
-
-    <div class="contact">
-      <h2>Entre em contato, e fale com nossa equipe!</h2>
-
-      <div class="info">
-        Ligue agora ou envie mensagem que retornaremos para tirar dúvidas, gerar
-        orçamento e agendar sua higienização. Nosso atendimento é de segunda à
-        sexta-feira das 9 às 18h.
-      </div>
-    </div>
-
-    <div class="clearfix"></div>
-
-    <div class="col-md-4 text-center">
-      <div class="col-md-12 text-center">
-        <h3 class="text-center">Agende Agora!</h3>
-        <p class="text-center">
+    <div class="budget">
+      <div class="budget-top">
+        <h3 class="budget-title">Solicite um orçamento</h3>
+        <p class="budget-info">
           Deixe seus dados, informe um horário e nós ligaremos para passar
           maiores informações:
         </p>
-        <form class="form" action="envia.php" method="post">
+        <form class="form budget-fields" action="envia.php" method="post">
           <fieldset>
             <div class="form-inputs">
-              <label for="nome">Nome:</label>
               <input
                 id="nome"
                 name="nome"
                 type="text"
                 placeholder="Nome"
                 required=""
-                class="form-control"
+                class="form-control mb-3"
               />
 
-              <label for="fone">Telefone:</label>
               <input
                 id="fone"
                 name="fone"
                 type="text"
                 placeholder="Fixo ou Celular"
-                class="form-control"
+                class="form-control mb-3"
                 required=""
               />
 
-                <label for="assunto">Mensagem:</label>
-                <textarea
-                  class="form-control"
-                  id="assunto"
-                  name="assunto"
-                ></textarea>
+              <textarea
+                class="form-control mb-3"
+                id="assunto"
+                name="assunto"
+                rows="5"
+                placeholder="Descreva resumidamente o tipo de serviço"
+              ></textarea>
 
-                <p>
-                  Descreva resumidamente &nbsp;o tipo de serviço
-                </p>
-                <button
-                  type="submit"
-                  id="enviar"
-                  name="enviar"
-                  class="btn btn-primary"
-                >
-                  Clique e Envie
-                </button>
-                </div>
-              </div>
+              <div class="row col-12" id="list-files-preview"></div>
+
+              <a href="javascript:;"
+                class="btn btn-success btn-lg btn-block mt-4 mb-4"
+                onclick="document.getElementById('files').click()"
+              >
+                Anexar Imagens
+                <input type="file" class="d-none" id="files" accept="image/*" multiple>
+              </a>
+
+              <button
+                type="submit"
+                id="enviar"
+                name="enviar"
+                class="btn btn-primary btn-lg btn-block mt-4 mb-4"
+              >
+                Solicitar Orçamento
+              </button>
+            </div>
+            </div>
             </div>
           </fieldset>
         </form>
       </div>
     </div>
 
-    <div class="clearfix"></div>
-
-    <div class="footer mt-3">
-      <div class="item">
-        <h2>Higienesp Ltda</h2>
-        <div class="info">
-          <div>Rua Solar dos Quevedos, 856 - Jardim Ibirapuera/SP</div>
-          <div>(11) 93148-3568 Telefone/Whatsapp</div>
-          <div>contato@higienesp.com.br</div>
-        </div>
-      </div>
-      <div class="item">
-        <h2 class="text-right">Siga nossas Redes Sociais</h2>
-        <div class="">
-          <div class="text-right">
-            <a href="https://www.youtube.com/channel/UCT9X0Rrfyvoe3KEm9ijJmQA" target="_blank" title="youtube">
-              <img
-                class="mr-1 icon-social"
-                src="./assets/images/youtube.svg"
-                width="40px"
-              />
-            </a>
-
-            <a href="https://www.facebook.com/higienesp/" target="_blank" title="Facebook">
-              <img
-                class="mr-1 icon-social"
-                src="./assets/images/facebook.svg"
-                width="40px"
-              />
-            </a>
-            
-            <a href="https://www.instagram.com/higienesp/?hl=pt-br" target="_blank" title="instagram">
-              <img
-                class="icon-social"
-                src="./assets/images/instagram.svg"
-                width="40px"
-              />
-            </a>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-
     <div class="box-whats">
       <div class="box-whats-header">
-        <div class="row">
+        <div style="display: flex;">
           <div class="box-whats-header-logo">
             <img
               class="img-logo-round"

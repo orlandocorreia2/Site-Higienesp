@@ -10,6 +10,14 @@
   color: #fff;
 }
 
+.header-inline {
+  display: flex;
+}
+
+.header-title {
+  width: 75%;
+}
+
 .header-title {
   font-size: 20px;
   margin-left: 110px;
@@ -19,11 +27,25 @@
   font-size: 16px;
   text-align: right;
   margin-right: 110px;
+  width: 25%;
 }
 
 .header-links span {
   margin-left: 20px;
   cursor: pointer;
+}
+
+.video-chart {
+  display: flex;
+  margin-top: 100px;
+}
+
+.video {
+  width: 50%;
+}
+.video-top-title {
+  text-align: center;
+  width: 100%;
 }
 
 .video-title {
@@ -45,6 +67,16 @@
   text-align: center;
 }
 
+.chart {
+  width: 50%;
+}
+
+.chart-top {
+  text-align: center;
+  width: 100%;
+  height: 100px;
+}
+
 #info-interaction-title {
   font-size: 30px;
   font-weight: bolder;
@@ -53,17 +85,15 @@
   text-align: center;
 }
 
-#percentage {
-  height: 50px;
-  width: 50px;
+.info-interaction-content {
+  padding-top: 30px;
+  text-align: center;
+  width: 100%;
+}
+
+.image-logo {
+  width: 500px;
   margin: auto;
-  line-height: 50px;
-  font-size: 30px;
-  font-weight: bolder;
-  border: 2px solid #333;
-  border-radius: 100px;
-  margin-top: 130px;
-  padding: 50px;
 }
 
 .img-logo-round {
@@ -72,246 +102,178 @@
   height: 100%;
 }
 
-.image1 {
-  margin: 0;
-}
-
-.services {
-  margin-top: -25px;
-  background-color: #337cbb;
-  color: #fff;
-  padding: 50px 150px 50px 150px;
-}
-
-.services h2 {
+.budget {
   text-align: center;
-  font-size: 35px;
-}
-
-.services .info {
-  font-size: 25px;
-  text-align: justify;
-}
-
-.portifolio {
-  color: #444;
-}
-
-.portifolio .item {
-  float: left;
-  width: 33.3333333333%;
-  padding: 30px;
-  box-sizing: border-box;
-}
-
-.portifolio h3 {
-  text-align: center;
-}
-
-.portifolio .info {
-  text-align: justify;
-}
-
-.sustainable .item {
-  width: 50%;
-  float: left;
-  font-size: 35px;
-  color: #5cb85c;
-  text-align: center;
-  padding: 30px;
-  box-sizing: border-box;
-}
-
-.sustainable h2 {
-  font-size: 35px;
-  color: #5cb85c;
-  text-align: center;
-}
-
-.sustainable h3 {
-  color: #5bc0de;
-  font-size: 28px;
-}
-
-.sustainable .info {
-  color: #444;
-  font-size: 23px;
-  text-align: justify;
-}
-
-.contact {
-  margin-top: 30px;
-  background-color: #337cbb;
-  color: #fff;
-  padding: 50px 150px 50px 150px;
-}
-
-.contact h2 {
-  text-align: center;
-  font-size: 35px;
-}
-
-.contact .info {
-  font-size: 25px;
-  text-align: justify;
-}
-
-.form {
-  color: #444;
-}
-
-.form-inputs {
-  width: 50%;
+  width: 100%;
   margin: auto;
 }
 
-.form label {
+.budget-top {
+  text-align: center;
+  width: 100%;
+}
+
+.budget-title {
+  text-align: center;
+}
+
+.budget-info {
+  text-align: center;
+}
+
+.budget-fields {
+  width: 70%;
+  margin: auto;
+}
+
+.image-preview {
+  border-radius: 5px;
+  width: 150px;
   margin-bottom: 20px;
 }
 
-.footer {
-  background-color: #337cbb;
-  color: #fff;
-  padding: 50px 150px 100px 150px;
-  box-sizing: border-box;
-  width: 100%;
-  height: 250px;
-}
-
-.footer .item {
-  width: 50%;
-  float: left;
-  box-sizing: border-box;
-}
-
-.footer h2 {
+.remove-image {
+  color: red;
   font-size: 30px;
-}
-
-.footer .social {
-  text-align: right;
-}
-
-.icon-social {
   cursor: pointer;
 }
 
 @media only screen and (max-width: 800px) {
+  .header {
+    height: 60px;
+    line-height: 60px;
+    background-color: #76cef1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999999;
+    color: #fff;
+  }
+
+  .header-inline {
+    display: flex;
+  }
+
+  .header-title {
+    width: 100%;
+    text-align: center;
+  }
+
+  .header-title {
+    font-size: 20px;
+    margin: auto;
+  }
+
   .header-links {
     display: none;
   }
 
-  .header-title {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+  .header-links span {
+    display: none;
+  }
+
+  .video-chart {
+    display: block;
+    margin-top: 70px;
+  }
+
+  .video {
+    width: 100%;
+  }
+  .video-top-title {
+    text-align: center;
+    width: 95%;
+  }
+
+  .video-title {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    max-width: 80%;
+    height: auto;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #video-title {
+    font-size: 15px;
+    font-weight: bolder;
+    text-align: center;
+    color: #222;
+    text-align: center;
+  }
+
+  .chart {
+    width: 95%;
     margin: auto;
   }
 
-  .services {
-    margin-top: -25px;
-    background-color: #337cbb;
-    color: #fff;
-    padding: 20px;
+  .chart-top {
     text-align: center;
-  }
-
-  .services h2 {
-    text-align: center;
-    font-size: 22px;
-  }
-
-  .services .info {
-    font-size: 18px;
-    text-align: justify;
-  }
-
-  .portifolio {
-    color: #444;
-  }
-
-  .portifolio .item {
-    float: none;
     width: 100%;
-    padding: 0;
+    height: 75px;
   }
 
-  .portifolio h3 {
+  #info-interaction-title {
+    font-size: 17px;
+    font-weight: bolder;
+    text-align: center;
+    color: #222;
     text-align: center;
   }
 
-  .portifolio .info {
-    text-align: justify;
-  }
-
-  .sustainable .item {
+  .info-interaction-content {
+    padding-top: 0;
+    text-align: center;
     width: 100%;
-    float: none;
-    font-size: 30px;
-    color: #5cb85c;
+  }
+
+  .image-logo {
+    width: 100%;
+    margin: 0;
+  }
+
+  .canvas {
+    margin-top: 100px;
+  }
+
+  .budget {
     text-align: center;
-    padding: 0;
-    box-sizing: border-box;
+    width: 100%;
+    margin: 20px auto auto auto;
   }
 
-  .sustainable h2 {
-    font-size: 22px;
-    color: #5cb85c;
+  .budget-top {
     text-align: center;
+    width: 100%;
   }
 
-  .sustainable h3 {
-    color: #5bc0de;
-    font-size: 20px;
-  }
-
-  .sustainable .info {
-    padding: 20px;
-    font-size: 16px;
-  }
-
-  .form-inputs {
-    width: 80%;
-    margin: auto;
-  }
-
-  .contact {
-    margin-top: 30px;
-    background-color: #337cbb;
-    color: #fff;
-    padding: 10px;
-  }
-
-  .contact h2 {
+  .budget-title {
     text-align: center;
     font-size: 18px;
   }
 
-  .contact .info {
-    font-size: 16px;
-    text-align: justify;
-  }
-
-  .footer {
-    background-color: #337cbb;
-    color: #fff;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 30px;
-    width: 100%;
-    height: 200px;
-  }
-
-  .footer .info {
-    font-size: 12px;
-  }
-
-  .footer h2 {
+  .budget-info {
+    text-align: center;
     font-size: 15px;
   }
 
-  .footer .social {
-    text-align: right;
+  .budget-fields {
+    width: 90%;
+    margin: auto;
+  }
+
+  .image-preview {
+    border-radius: 5px;
+    width: 100px;
+    margin-bottom: 20px;
+  }
+
+  .remove-image {
+    color: red;
+    font-size: 25px;
+    cursor: pointer;
   }
 }
