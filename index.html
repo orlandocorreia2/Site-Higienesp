@@ -9,34 +9,58 @@
     <link rel="stylesheet" href="./assets/css/embed.css" />
     <link rel="stylesheet" href="./assets/css/whats.css" />
   </head>
-  <body>
+  <body >
     <header class="header">
       <div class="row">
         <div class="col-9 col-sm-9">
           <span class="header-title">Higienesp - Higienizando SP</span>
         </div>
         <div class="col-3 header-links">
-          <span>Home</span>
-          <span>Serviços</span>
+          <span id="link-home">Home</span>
+          <span id="link-services">Serviços</span>
         </div>
       </div>
     </header>
-    <div class="embed-container">
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/xwmnB9VG9b4"
-        frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
+
+    <div class="row mt-100">
+      <div class="col-6">
+        <div class="col12 text-center">
+          <span id="video-title" ></span>
+        </div>
+        
+        <div class="embed-container">
+          <div class="clearfix" ></div>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/xwmnB9VG9b4"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+
+      <div class="col-6">
+        <div class="col-12 text-center" style="height: 100px;">
+          <span id="info-interaction-title">Bem vindo a Higiensp</span>
+        </div>
+        <div class="col-12 text-center pt-3 info-interaction-content">
+          <img id="info-interaction-content-logo"  src="./assets/images/logo-higienesp.png" width="500" alt="">
+          <canvas class="d-none" id="myChart"></canvas>
+        </div>
+      </div>
     </div>
 
+
+
+    
+    
     <div class="image1">
       <img src="./assets/images/slide_sofa_01.jpg" width="100%" />
     </div>
 
-    <div class="services">
+    <div class="services" id="services">
       <h2>Conheça nossos Serviços</h2>
 
       <div class="info">
@@ -45,7 +69,7 @@
         ponta e ecologicamente aprovados, com equipes treinadas para oferecer
         qualidade e garantias de segurança para sua família, clientes e seus
         colaboradores. Confira nossos serviços e entre em contato para tirar
-        dúvidas, orçamentos e fazer seu agendamento. Atenção:Todos os produtos
+        dúvidas, orçamentos e fazer seu agendamento. Atenção: Todos os produtos
         aplicados possuem certificação e ação de sanitização contra vírus e
         bactérias.
       </div>
@@ -132,7 +156,8 @@
           atendam todos os requisitos de biossegurança, para utilização por
           parte de nossa equipe e também na aplicação em diversos ambientes e
           formatos. Dessa forma, garantimos que todos envolvidos nesse processo
-          terão segurança conforme regulamentação da ANVISA.
+          terão segurança conforme regulamentação da 
+          <a href="http://portal.anvisa.gov.br/" target="_blank">ANVISA.</a> 
         </div>
       </div>
     </div>
@@ -222,18 +247,30 @@
         <h2 class="text-right">Siga nossas Redes Sociais</h2>
         <div class="">
           <div class="text-right">
-            <img
-              class="mr-1 icon-social"
-              src="./assets/images/facebook.svg"
-              width="40px"
-              title="Facebook"
-            />
-            <img
-              class="icon-social"
-              src="./assets/images/instagram.svg"
-              width="40px"
-              title="instagram"
-            />
+            <a href="https://www.youtube.com/channel/UCT9X0Rrfyvoe3KEm9ijJmQA" target="_blank" title="youtube">
+              <img
+                class="mr-1 icon-social"
+                src="./assets/images/youtube.svg"
+                width="40px"
+              />
+            </a>
+
+            <a href="https://www.facebook.com/higienesp/" target="_blank" title="Facebook">
+              <img
+                class="mr-1 icon-social"
+                src="./assets/images/facebook.svg"
+                width="40px"
+              />
+            </a>
+            
+            <a href="https://www.instagram.com/higienesp/?hl=pt-br" target="_blank" title="instagram">
+              <img
+                class="icon-social"
+                src="./assets/images/instagram.svg"
+                width="40px"
+              />
+            </a>
+            
           </div>
         </div>
       </div>
@@ -341,5 +378,7 @@
     </div>
   </body>
 
+  <script src="./assets/js/chart.js" ></script>
   <script src="./assets/js/scripts.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.js" ></script>
 </html>
